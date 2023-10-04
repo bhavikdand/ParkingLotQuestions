@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.scaler</groupId>
-    <artifactId>ChangePaymentGateway-starter</artifactId>
+    <artifactId>IntegratePaymentGateway-solution</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
