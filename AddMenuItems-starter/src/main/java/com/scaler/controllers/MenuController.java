@@ -15,15 +15,6 @@ public class MenuController {
     }
 
     public AddMenuItemResponseDto addMenuItem(AddMenuItemRequestDto requestDto){
-        AddMenuItemResponseDto responseDto = new AddMenuItemResponseDto();
-        try {
-            MenuItem menuItem = menuService.addMenuItem(requestDto.getUserId(), requestDto.getName(), requestDto.getPrice(), requestDto.getDietaryRequirement(), requestDto.getItemType(), requestDto.getDescription());
-            responseDto.setMenuItem(menuItem);
-            responseDto.setStatus(ResponseStatus.SUCCESS);
-            return responseDto;
-        } catch (Exception e){
-            responseDto.setStatus(ResponseStatus.FAILURE);
-            return responseDto;
-        }
+        return null;
     }
 }
