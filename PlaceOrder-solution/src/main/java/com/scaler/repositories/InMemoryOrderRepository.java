@@ -24,8 +24,4 @@ public class InMemoryOrderRepository implements OrderRepository{
         return order;
     }
 
-    @Override
-    public List<Order> findOrdersByCustomerSession(long customerSessionId) {
-        return ordersMap.values().stream().filter(order -> order.getCustomerSession().getId() == customerSessionId).toList();
-    }
 }

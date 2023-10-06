@@ -27,16 +27,6 @@ public class InMemoryMenuItemRepositoryImpl implements MenuItemRepository {
     }
 
     @Override
-    public List<MenuItem> getAll() {
-        return menuItems.values().stream().toList();
-    }
-
-    @Override
-    public List<MenuItem> getByDietaryRequirement(DietaryRequirement dietaryRequirement) {
-        return menuItems.values().stream().filter(menuItem -> menuItem.getDietaryRequirement() == dietaryRequirement).toList();
-    }
-
-    @Override
     public Optional<MenuItem> findById(long id) {
         return menuItems.values().stream().filter(menuItem -> menuItem.getId() == id).findFirst();
     }

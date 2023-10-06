@@ -8,5 +8,4 @@ public interface OrderRepository {
 
     Order save(Order order);
 
-    List<Order> findOrdersByCustomerSession(long customerSessionId);
 }
