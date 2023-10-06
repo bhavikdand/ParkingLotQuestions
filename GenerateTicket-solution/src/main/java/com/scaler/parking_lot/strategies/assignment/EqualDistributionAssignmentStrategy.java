@@ -35,7 +35,11 @@ public class EqualDistributionAssignmentStrategy implements SpotAssignmentStrate
         }
         // Set the status of the spot to OCCUPIED
         long finalMaxFloorId = maxFloorId;
-        ParkingFloor parkingFloor = parkingLot.getParkingFloors().stream().filter(floor -> floor.getId() == finalMaxFloorId).findFirst().get();
+        Optional<ParkingFloor> parkingFloorOptional = parkingLot.getParkingFloors().stream().filter(floor -> floor.getId() == finalMaxFloorId).findFirst();
+        if(parkingFloorOptional.isEmpty()){
+            return Optional.empty();
+        }
+        ParkingFloor parkingFloor = parkingFloorOptional.get();
         for (ParkingSpot spot : parkingFloor.getSpots()) {
             if(spot.getStatus().equals(ParkingSpotStatus.AVAILABLE) && spot.getSupportedVehicleType().equals(vehicleType)){
                 spot.setStatus(ParkingSpotStatus.OCCUPIED);

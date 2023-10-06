@@ -17,7 +17,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TicketControllerTest {
+public class TestTicketController {
 
     private GateRepository gateRepository;
     private VehicleRepository vehicleRepository;
