@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Bill extends BaseModel {
     private Map<MenuItem, Integer> orderedItems;
-    private double totalAmount;
+    private double totalAmount; // Includes GST and Service Charge and total food cost
     private double gst;
     private double serviceCharge;
     public Map<MenuItem, Integer> getOrderedItems() {
