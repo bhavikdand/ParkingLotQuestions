@@ -1,12 +1,9 @@
 package com.scaler.parking_lot.strategies.pricing;
 
-import com.scaler.parking_lot.models.Slab;
 import com.scaler.parking_lot.models.VehicleType;
 import com.scaler.parking_lot.respositories.SlabRepository;
-import com.scaler.parking_lot.utils.DateTimeUtils;
 
 import java.util.Date;
-import java.util.List;
 
 public class WeekendPricingStrategy implements PricingStrategy{
 
@@ -18,6 +15,6 @@ public class WeekendPricingStrategy implements PricingStrategy{
 
     @Override
     public double calculateAmount(Date entryTime, Date exitTime, VehicleType vehicleType) {
-
+        return 0;
     }
 }
