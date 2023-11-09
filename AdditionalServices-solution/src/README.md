@@ -11,21 +11,21 @@ All the additional services have a fixed fee.
 Each additional service has its own set of supported vehicle types. Meaning a car wash can only be done for cars and not for bikes.
 Details for the addtionals services are as follows:
 1. Car Wash
-    - Supported Vehicle Types: Car, Suv
-    - Fee: 200
+   - Supported Vehicle Types: Car, Suv
+   - Fee: 200
 2. Bike Wash
-    - Supported Vehicle Types: Bike, EV bike
-    - Fee: 100
+   - Supported Vehicle Types: Bike, EV bike
+   - Fee: 100
 3. Car detailing
-    - Supported Vehicle Types: Car, Suv
-    - Fee: 500
+   - Supported Vehicle Types: Car, Suv
+   - Fee: 500
 4. EV bike charging
-    - Supported Vehicle Types: EV bike
-    - Fee: 100
+   - Supported Vehicle Types: EV bike
+   - Fee: 100
 5. EV car charging
-    - Supported Vehicle Types: EV car
-    - Fee: 200
-If a vehicle type is not supported for a particular service, then the service should not be offered to the customer i.e. ticket should not be generated.
+   - Supported Vehicle Types: EV car
+   - Fee: 200
+     If a vehicle type is not supported for a particular service, then the service should not be offered to the customer i.e. ticket should not be generated.
 
 ### Invoice generation
 We want to generate an invoice for the customer when they are exiting the parking lot. The invoice should include the parking fee and the additional services fee.
@@ -55,6 +55,5 @@ To achieve these requirements we need to do 2 things:
 2. We need to implement the `createInvoice` inside the `InvoiceController` class to generate the invoice.
 3. Refer the dtos package to understand the input and output of the functionality we are implementing.
 4. Implement the `InvoiceService`,`TicketService` and relevant repositories and strategies to achieve the requirements.
-5. Refer the `TestControllers` to understand how the functionality will be tested.
-6. Do not modify existing methods inside interfaces, feel to add new if required.
-7. We will be using in memory database for this assignment.
+5. Do not modify existing methods inside interfaces, feel to add new if required.
+6. We will be using in memory database for this assignment.

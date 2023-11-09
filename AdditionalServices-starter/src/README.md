@@ -55,6 +55,5 @@ To achieve these requirements we need to do 2 things:
 2. We need to implement the `createInvoice` inside the `InvoiceController` class to generate the invoice.
 3. Refer the dtos package to understand the input and output of the functionality we are implementing.
 4. Implement the `InvoiceService`,`TicketService` and relevant repositories and strategies to achieve the requirements.
-5. Refer the `TestControllers` to understand how the functionality will be tested.
-6. Do not modify existing methods inside interfaces, feel to add new if required.
-7. We will be using in memory database for this assignment.
+5. Do not modify existing methods inside interfaces, feel to add new if required.
+6. We will be using in memory database for this assignment.
