@@ -27,5 +27,5 @@ inner map key is the vehicle type and value is the capacity of the given vehicle
 2. Implement the `getParkingLotCapacity` inside the `ParkingLotController` class.
 3. Refer the `model` package.
 4. Implement the `ParkingLotService` interface and the repositories to achieve the desired result.
-5. Refer the `ParkingLotControllerTest` class for the set of test cases that you can run to verify your implementation. Your implementation should pass all the test cases.
+5. Implement an in memory database to store the data.
 6. Do not modify existing methods for interfaces, feel free to add new methods if required.
