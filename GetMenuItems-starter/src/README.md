@@ -1,7 +1,7 @@
 # Implement functionality using which customers can browse the menu items
 
 ## Problem Statement
-You are building a Restaurant Management System. As a part of this system, you need to implement functionality using which customers can browse the menu items and place an order.
+You are building a Restaurant Management System. As a part of this system, you need to implement functionality using which customers can browse the menu items.
 
 ## Assignment
 
@@ -20,3 +20,4 @@ Your task is to implement the following functionality in the system.
 * Refer the `GetMenuItemsRequestDto` and `GetMenuItemsResponseDto` classes for understanding the expected input and output to the functionality.
 * Refer the models package for reference of the models.
 * Implement the MenuRepository and MenuService interfaces to achieve the above requirements.
+* Please implement an in memory database to store the menu items. You can use any data structure of your choice to store the menu items.
