@@ -27,6 +27,8 @@ Your task is to implement the following functionality.
 4. Depending upon the type of query the functionality should aggregate the relevant revenue data and return the response.
 5. This functionality will only available to users with billing privileges.
 
+Note: The financial year start from Jan 1st and ends on Dec 31.
+
 #### Instructions
 
 * Refer the `calculateRevenue` method inside `RevenueController` class.
